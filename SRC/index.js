@@ -25,5 +25,5 @@ app.use(bodyParser.json());
 business.businessRoutes(app);
 
 app.listen(3000, function (){
-    console.log("Listening at port %s",3000);
+    console.log("Now Listening at port %s",3000);
 });
