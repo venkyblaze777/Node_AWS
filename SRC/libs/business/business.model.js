@@ -19,7 +19,7 @@ exports.findBusinessById = (id) => {
     return new Promise((resolve, reject) =>{
     Business.findByPk(id).then(business => {
         if(business == null){
-            reject({status : 404, message:"Business not found"});
+            reject({status : 404, message:"No Business Found"});
         }
         resolve(business);
     }, err =>{
